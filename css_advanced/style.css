@@ -1,7 +1,7 @@
-/* ===== Header ===== */
+
 .header {
-  background-color: #FFFFFF; /* update with exact Figma value */
-  padding: 24px 32px;        /* adjust to Figma spacing */
+  background-color: #FFFFFF; 
+  padding: 24px 32px;        
   position: fixed;
   width: 100%;
   top: 0;
@@ -19,45 +19,45 @@
 }
 
 .logo {
-  height: 40px; /* Figma height for logo */
+  height: 40px; 
   width: auto;
 }
 
 /* Navigation */
 .nav ul {
   display: flex;
-  gap: 32px; /* Figma spacing between nav links */
+  gap: 32px; 
   list-style: none;
 }
 
 .nav a {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;            /* Figma font size */
+  font-size: 16px;            
   font-weight: 600;
-  color: #333333;             /* Figma text color */
+  color: #333333;             
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .nav a:hover {
-  color: #007BFF;             /* update if Figma hover color differs */
+  color: #007BFF;           
 }
 
-/* ===== First (Hero) Section ===== */
+
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 160px 0 80px;      /* top and bottom padding from Figma */
-  background-color: #F5F8FA;  /* Figma background color */
+  padding: 160px 0 80px;      
+  background-color: #F5F8FA;  
 }
 
 .hero-text {
-  max-width: 550px;           /* Figma max-width for text */
+  max-width: 550px;         
 }
 
 .hero h1 {
-  font-family: 'Spin-Cycle-OT', sans-serif; /* Figma heading font */
+  font-family: 'Spin-Cycle-OT', sans-serif; 
   font-size: 48px;
   line-height: 1.1;
   color: #222222;
