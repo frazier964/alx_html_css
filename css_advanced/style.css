@@ -1,88 +1,87 @@
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ===== Header ===== */
+.header {
+  background-color: #FFFFFF; /* update with exact Figma value */
+  padding: 24px 32px;        /* adjust to Figma spacing */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.5;
-  background-color: #ffffff;
-  color: #333;
-}
-
-/* Container Utility */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
-}
-
-/* Header */
-.header {
-  background-color: #f8f8f8;
-  padding: 1rem 0;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  max-height: 50px;
+  height: 40px; /* Figma height for logo */
+  width: auto;
 }
 
+/* Navigation */
 .nav ul {
   display: flex;
-  gap: 2rem;
+  gap: 32px; /* Figma spacing between nav links */
   list-style: none;
 }
 
 .nav a {
-  text-decoration: none;
-  color: #333;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;            /* Figma font size */
   font-weight: 600;
+  color: #333333;             /* Figma text color */
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 .nav a:hover {
-  color: #007bff;
+  color: #007BFF;             /* update if Figma hover color differs */
 }
 
-/* Hero Section */
+/* ===== First (Hero) Section ===== */
 .hero {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 0;
-  background-color: #eef1f5;
+  padding: 160px 0 80px;      /* top and bottom padding from Figma */
+  background-color: #F5F8FA;  /* Figma background color */
 }
 
 .hero-text {
-  flex: 1;
-  min-width: 300px;
+  max-width: 550px;           /* Figma max-width for text */
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-family: 'Spin-Cycle-OT', sans-serif; /* Figma heading font */
+  font-size: 48px;
+  line-height: 1.1;
+  color: #222222;
+  margin-bottom: 24px;
 }
 
 .hero p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555555;
+  margin-bottom: 32px;
 }
 
 .btn-primary {
-  padding: 0.75rem 1.5rem;
-  background-color: #007bff;
-  color: #fff;
+  display: inline-block;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 8px;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: background 0.3s;
+  transition: background-color 0.3s;
 }
 
 .btn-primary:hover {
@@ -91,114 +90,7 @@ body {
 
 .hero-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px; /* Figma image width */
+  height: auto;
 }
 
-/* About Section */
-.about {
-  padding: 4rem 0;
-  background-color: #fff;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* Services Section */
-.services {
-  padding: 4rem 0;
-  background-color: #f5f5f5;
-}
-
-.services h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.service-items {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.service {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  text-align: center;
-  width: 300px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.service img {
-  width: 100px;
-  margin-bottom: 1rem;
-}
-
-/* Contact Section */
-.contact {
-  padding: 4rem 0;
-  background-color: #eef1f5;
-  text-align: center;
-}
-
-.contact form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.contact input,
-.contact textarea {
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.contact button {
-  padding: 0.75rem;
-  background-color: #28a745;
-  color: #fff;
-  border: none;
-  font-weight: 600;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact button:hover {
-  background-color: #218838;
-}
-
-/* Footer */
-.footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem 0;
-  font-size: 0.9rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .service-items {
-    flex-direction: column;
-    align-items: center;
-  }
-}
