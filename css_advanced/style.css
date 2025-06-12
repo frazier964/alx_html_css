@@ -170,6 +170,97 @@
   align-items: center;
   gap: 6px;
 }
+/* ===== Membership Section ===== */
+.membership {
+  background-color: #ffffff; /* Figma background */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.membership .section-title {
+  font-family: 'Spin-Cycle-OT', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #222222;
+  margin-bottom: 48px;
+}
+
+.membership-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.membership-card {
+  background-color: #F9FBFD; /* card background from Figma */
+  border: 2px solid #E0E7EF;  /* card border from Figma */
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.membership-card:hover {
+  transform: translateY(-4px);
+  border-color: #007BFF; /* accent color on hover */
+}
+
+.membership-card h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  color: #222222;
+  margin-bottom: 16px;
+}
+
+.membership-card .price {
+  font-size: 32px;
+  font-weight: 700;
+  color: #007BFF; /* main accent color */
+  margin-bottom: 24px;
+}
+
+.membership-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  text-align: left;
+}
+
+.membership-card ul li {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.membership-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #28a745; /* checkmark color */
+}
+
+.membership-card .btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.membership-card .btn:hover {
+  background-color: #0056b3;
+}
 
 }
 
